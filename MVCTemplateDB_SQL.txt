@@ -1,0 +1,60 @@
+IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = N'MVCUITemplateDB')
+BEGIN
+    CREATE DATABASE [MVCUITemplateDB];
+END
+GO
+
+USE [MVCUITemplateDB];
+GO
+
+SET NOCOUNT ON;
+SET XACT_ABORT ON;
+GO
+
+-- Customers table
+CREATE TABLE dbo.Customers (
+    CustomerID INT IDENTITY(1,1) NOT FOR REPLICATION NOT NULL PRIMARY KEY,
+    Title NVARCHAR(8) NULL,
+    FirstName NVARCHAR(50) NOT NULL,
+    LastName NVARCHAR(50) NOT NULL,
+    CompanyName NVARCHAR(128) NULL,
+    EmailAddress NVARCHAR(100) NOT NULL,
+    Phone NVARCHAR(25) NULL,
+    rowguid UNIQUEIDENTIFIER ROWGUIDCOL NOT NULL CONSTRAINT AK_Customers_rowguid UNIQUE
+        CONSTRAINT DF_Customers_rowguid DEFAULT (NEWID()),
+    ModifiedDate DATETIME2 NOT NULL DEFAULT (GETDATE())
+);
+GO
+
+-- Unique constraint on Email
+ALTER TABLE dbo.Customers
+ADD CONSTRAINT UQ_Customers_Email UNIQUE (EmailAddress);
+GO
+
+-- Customers_GetAll procedure
+CREATE PROCEDURE dbo.spCustomers_GetAll
+AS
+BEGIN
+    SET NOCOUNT ON;
+    SELECT * FROM dbo.Customers ORDER BY CustomerID;
+END
+GO
+
+SET IDENTITY_INSERT dbo.Customers ON;
+GO
+
+INSERT INTO dbo.Customers (CustomerID, Title, FirstName, LastName, CompanyName, EmailAddress, Phone, ModifiedDate)
+VALUES
+    (11, 'Mr', 'John', 'Doe', 'ORG001', 'john.doe@org001.com', '0123456789', '2020-12-01 00:00:00.0000000'),
+    (12, 'Ms', 'Jane', 'Smith', 'ORG002', 'jane.smith@org002.com', '0123456790', '2023-03-15 00:00:00.0000000'),
+    (14, 'Ms', 'Maria', 'Gomez', 'ORG004', 'maria.gomez@org004.com', '0123456792', '2024-11-09 00:00:00.0000000'),
+    (15, 'Mr', 'David', 'Brown', 'ORG005', 'david.brown@org005.com', '0123456793', '2022-06-30 00:00:00.0000000'),
+    (18, 'Mr', 'Carlos', 'Santos', 'ORG008', 'carlos.santos@org008.com', '0123456796', '2020-09-12 00:00:00.0000000'),
+    (20, 'Mr', 'Mohamed', 'Assan', 'ORG010', 'mohamed.hassan@org010.com', '0123456798', '2025-10-24 12:09:17.3241609'),
+    (1002, 'Ms', 'Aishatul', 'Ahmed', 'ORG007', 'aisha.ahmed@org007.com', '0123456795', '2025-11-10 14:22:48.4663660'),
+    (1003, 'Ms', 'Anna', 'Kowalski', 'ORG009', 'anna.kowalski@org009.co', '0123456797', '2025-11-10 14:24:52.3773912'),
+    (1004, 'Mr.', 'Kawasaki', 'Bajaj', 'ORG0015', 'bajaj.kowalski@org0015.com', '0123456797', '2025-11-10 14:26:24.4932277');
+GO
+
+SET IDENTITY_INSERT dbo.Customers OFF;
+GO
