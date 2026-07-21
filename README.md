@@ -1,0 +1,1 @@
+# A-Journal-on-Database-Aware-Smart-Scaffolder
