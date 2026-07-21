@@ -57,9 +57,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Rashedul Haque Ronjon**
 
 ## Links:
-**MVC_UI_Template**
+- **MVC_UI_Template**
 https://github.com/RashedulHaqueRonjon/MVC_UI_Template
-**Medical_Devices_KYC_MVC_Templates**
+- **Medical_Devices_KYC_MVC_Templates**
 https://github.com/RashedulHaqueRonjon/Medical_Devices_KYC_MVC_Templates
-**Medical_Devices_KYC_Database**
+- **Medical_Devices_KYC_Database**
 https://github.com/RashedulHaqueRonjon/Medical_Devices_KYC_Database
