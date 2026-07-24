@@ -50,8 +50,7 @@ The Database-Aware Smart Scaffolder (DASS) is designed to:
 
 ## Digital Object Identifiers (DOI)
 
-- **A Journal on Database-Aware Smart Scaffolder**: https://doi.org/10.5281/zenodo.2153379
-- **FOOTBALL_MATCH_TELECASTER**: https://doi.org/10.5281/zenodo.2153525
+- **A Journal on Database-Aware Smart Scaffolder**: https://doi.org/10.5281/zenodo.21533793
 
 ## License
 
