@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository documents the **Database-Aware Smart Scaffolder (DASS)**, an innovative approach to automating the generation of Model-View-Controller (MVC) scaffolding with intelligent database awareness. This project serves as a comprehensive journal on the development, design, and implementation of DASS, comparing it with traditional ASP.NET default scaffolding approaches.
+This repository documents the **Database-Aware Smart Scaffolder (DASS)**, an innovative approach to automating the generation of Model-View-Controller (MVC) scaffolding with intelligent database awareness.
 
 LinkedIn: https://www.linkedin.com/pulse/dass-database-aware-smart-scaffolder-rashedul-haque-ronjon-ujcdc
 
@@ -47,6 +47,11 @@ The Database-Aware Smart Scaffolder (DASS) is designed to:
 - **Platform**: ASP.NET MVC
 - **Database**: SQL Server (configurable via templates)
 - **Documentation**: Technical whitepaper with visual diagrams
+
+## Digital Object Identifiers (DOI)
+
+- **A Journal on Database-Aware Smart Scaffolder**: https://doi.org/10.5281/zenodo.2153379
+- **FOOTBALL_MATCH_TELECASTER**: https://doi.org/10.5281/zenodo.2153525
 
 ## License
 
