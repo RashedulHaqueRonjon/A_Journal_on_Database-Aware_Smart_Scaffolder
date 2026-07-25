@@ -18,7 +18,7 @@ The Database-Aware Smart Scaffolder (DASS) is designed to:
 
 ### Documentation & Technical Resources
 - **DASS_Technical_Whitepaper.pdf** - Comprehensive technical documentation describing the architecture, methodology, and implementation details of the DASS system
-- **Database_Aware_Smart_Scaffolder(DASS).png** - Visual diagram/architecture overview of the DASS system
+- **Database-Aware_Smart_Scaffolder(DASS).png** - Visual diagram/architecture overview of the DASS system
 
 ### Database Templates & Configuration
 - **MVCTemplateDB_Excel.xlsx** - Excel-based database template configuration for MVC scaffolding
@@ -38,7 +38,7 @@ The Database-Aware Smart Scaffolder (DASS) is designed to:
 ## Getting Started
 
 1. Review the **DASS_Technical_Whitepaper.pdf** for a detailed understanding of the system
-2. Examine the **Database_Aware_Smart_Scaffolder(DASS).png** diagram to understand the architecture
+2. Examine the **Database-Aware_Smart_Scaffolder(DASS).png** diagram to understand the architecture
 3. Compare the screenshot directories to see the differences between default and DASS scaffolding
 4. Use **MVCTemplateDB_Excel.xlsx** and **MVCTemplateDB_SQL.txt** as templates for your database configuration
 
