@@ -8,6 +8,8 @@ LinkedIn: https://www.linkedin.com/pulse/dass-database-aware-smart-scaffolder-ra
 
 ## Project Description
 
+Database-Aware Smart Scaffolder (DASS) is a research and development project proposing a smarter scaffolding approach that generates richer ASP.NET MVC CRUD applications by combining database metadata, business rules, UI templates, and developer customization.
+
 The Database-Aware Smart Scaffolder (DASS) is designed to:
 - Automatically generate MVC scaffolding based on database schema
 - Provide intelligent, database-aware code generation
